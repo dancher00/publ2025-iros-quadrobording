@@ -1,0 +1,176 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%2345678901234567890123456789012345678901234567890123456789012345678901234567890
+%        1         2         3         4         5         6         7         8
+
+\documentclass[letterpaper, 10 pt, conference]{ieeeconf}  % Comment this line out if you need a4paper
+
+%\documentclass[a4paper, 10pt, conference]{ieeeconf}      % Use this line for a4 paper
+
+% \IEEEoverridecommandlockouts                              % This command is only needed if 
+%                                                           % you want to use the \thanks command
+
+% \overrideIEEEmargins                                      % Needed to meet printer requirements.
+
+%In case you encounter the following error:
+%Error 1010 The PDF file may be corrupt (unable to open PDF file) OR
+%Error 1000 An error occurred while parsing a contents stream. Unable to analyze the PDF file.
+%This is a known problem with pdfLaTeX conversion filter. The file cannot be opened with acrobat reader
+%Please use one of the alternatives below to circumvent this error by uncommenting one or the other
+%\pdfobjcompresslevel=0
+%\pdfminorversion=4
+
+% See the \addtolength command later in the file to balance the column lengths
+% on the last page of the document
+
+% The following packages can be found on http:\\www.ctan.org
+\usepackage{graphics} % for pdf, bitmapped graphics files
+\usepackage{epsfig} % for postscript graphics files
+\usepackage{mathptmx} % assumes new font selection scheme installed
+\usepackage{times} % assumes new font selection scheme installed
+\usepackage{amsmath} % assumes amsmath package installed
+\usepackage{amssymb}  % assumes amsmath package installed
+
+\title{\LARGE \bf
+Development of a special purpose mobile wheeled robot for agro-industrial complex with closed greenhouses*
+}
+
+
+\author{Sergei Davidenko$^{1}$, Ilya Osokin$^{2}$, Ilya Ryakin$^{3}$, Sina Moghimi$^{4}$, Mikhail Patrikeev$^{5}$, Pavel Osinenko$^{6}$% <-this % stops a space
+}
+% \thanks{*This work was not supported by any organization}% <-this % stops a space
+% \thanks{$^{1}$Albert Author is with Faculty of Electrical Engineering, Mathematics and Computer Science,
+%         University of Twente, 7500 AE Enschede, The Netherlands
+%         {\tt\small albert.author@papercept.net}}%
+% \thanks{$^{2}$Bernard D. Researcheris with the Department of Electrical Engineering, Wright State University,
+%         Dayton, OH 45435, USA
+%         {\tt\small b.d.researcher@ieee.org}}%
+% }
+
+
+\begin{document}
+
+
+
+\maketitle
+\thispagestyle{empty}
+\pagestyle{empty}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{abstract}
+
+
+\end{abstract}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{INTRODUCTION}
+
+\subsection{Close agroindustry challenges}
+\subsection{Literature overview}
+\subsection{Related work}
+
+
+\section{Purpose explanation}
+
+\section{Mechanics part}
+\subsection{Frame design}
+\subsection{Wheel module with active dumping}
+\subsection{Rack for camera}
+\subsection{Antihumidity solution}
+
+\section{Electromechanics part}
+\subsection{motor wheel choosing}
+As we know \cite{IEEEexample:shellCTANpage} for understanding which motor we need choose for our robotics platform, the understanding of maximum capacity and robot weight itself needed.
+Actually the problem of calculating general platform weight when we don't know weight of it's parts exactly usually solving by iterative method based on our engineering suggestion.
+We can just choose motor as potential and try to calculate general weight. When we know max robot weight and max capacity we can make convert it in torque which we need for each wheels
+If we see that the difference between required torque and nomonal torque is negative it is mean that motors which will choosed is not enough and we need choose motor with more nominal torque   
+
+
+\section{Electronics part}
+\subsection{Power battery choosing}
+\subsubsection{Safety description}
+\subsubsection{}
+\subsection{System architecture}
+\subsection{}
+
+\section{Embedded part}
+\section{Sensorics}
+\subsection{navigation\&localization setup}
+\subsubsection{Visual sensors}
+\subsubsection{inertial sensor}
+\subsection{Greenhouse detection setup}
+\subsubsection{Visual sensors}
+\subsubsection{Lenses choosing}
+
+\subsection{Computer selection}
+\subsection{Architecture of submodule communications}
+
+
+
+\subsection{Headings, etc}
+
+Text heads organize the topics on a relational, hierarchical basis. For example, the paper title is the primary text head because all subsequent material relates and elaborates on this one topic. If there are two or more sub-topics, the next level head (uppercase Roman numerals) should be used and, conversely, if there are not at least two sub-topics, then no subheads should be introduced. Styles named Heading 1, Heading 2, Heading 3, and Heading 4 are prescribed.
+
+\subsection{Figures and Tables}
+
+Positioning Figures and Tables: Place figures and tables at the top and bottom of columns. Avoid placing them in the middle of columns. Large figures and tables may span across both columns. Figure captions should be below the figures; table heads should appear above the tables. Insert figures and tables after they are cited in the text. Use the abbreviation Fig. 1, even at the beginning of a sentence.
+
+\begin{table}[h]
+\caption{An Example of a Table}
+\label{table_example}
+\begin{center}
+\begin{tabular}{|c||c|}
+\hline
+One & Two\\
+\hline
+Three & Four\\
+\hline
+\end{tabular}
+\end{center}
+\end{table}
+
+
+   \begin{figure}[thpb]
+      \centering
+      \framebox{\parbox{3in}{We suggest that you use a text box to insert a graphic (which is ideally a 300 dpi TIFF or EPS file, with all fonts embedded) because, in an document, this method is somewhat more stable than directly inserting a picture.
+}}
+      %\includegraphics[scale=1.0]{figurefile}
+      \caption{Inductance of oscillation winding on amorphous
+       magnetic core versus DC bias magnetic field}
+      \label{figurelabel}
+   \end{figure}
+   
+
+Figure Labels: Use 8 point Times New Roman for Figure labels. Use words rather than symbols or abbreviations when writing Figure axis labels to avoid confusing the reader. As an example, write the quantity Magnetization, or Magnetization, M, not just M. If including units in the label, present them within parentheses. Do not label axes only with units. In the example, write Magnetization (A/m) or Magnetization {A[m(1)]}, not just A/m. Do not label axes with a ratio of quantities and units. For example, write Temperature (K), not Temperature/K.
+
+\section{CONCLUSIONS}
+
+A conclusion section is not required. Although a conclusion may review the main points of the paper, do not replicate the abstract as the conclusion. A conclusion might elaborate on the importance of the work or suggest applications and extensions. 
+
+\addtolength{\textheight}{-12cm}   % This command serves to balance the column lengths
+                                  % on the last page of the document manually. It shortens
+                                  % the textheight of the last page by a suitable amount.
+                                  % This command does not take effect until the next page
+                                  % so it should come on the page before the last. Make
+                                  % sure that you do not shorten the textheight too much.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section*{APPENDIX}
+
+Appendixes should appear before the acknowledgment.
+
+\section*{ACKNOWLEDGMENT}
+
+\bibliographystyle{IEEEtran}
+\bibliography{my-bib.bib}
+
+\end{document}
